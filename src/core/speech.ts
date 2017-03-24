@@ -7,11 +7,23 @@ import { Logger } from '../logging';
 @Injectable()
 export class Speech {
 
+  private locale = 'en-us';
+
   private promise = Promise.resolve();
 
   private pending = 0;
 
+  private rate = 1.0;
+
   constructor(private tts: TextToSpeech, private logger: Logger) {}
+
+  setLocale(locale: string) {
+    this.locale = locale;
+  }
+
+  setRate(rate: number) {
+    this.rate = rate;
+  }
 
   speak(message: string) {
     // TODO: priorities?
@@ -19,8 +31,8 @@ export class Speech {
     this.pending++;
     this.promise = this.promise.then(() => {
       if (--this.pending === 0) {
-        this.logger.debug('Speak ', message);
-        return this.tts.speak(message);
+        this.logger.debug('Speak (', this.locale, '): ', message);
+        return this.tts.speak({text: message, locale: this.locale || 'en-us', rate: this.rate || 1.0});
       } else {
         this.logger.debug('Speech cancelled', message);
       }

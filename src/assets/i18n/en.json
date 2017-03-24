@@ -53,8 +53,9 @@
 
   "Language": "Language",
   "Default": "Default",
-  "Enable fullscreen": "Enable fullscreen",
-  "Enable speech": "Enable speech",
+  "Speech output": "Speech output",
+  "Off": "Off",
+  "Fullscreen mode": "Fullscreen mode",
   "Display current lap": "Display current lap",
   "Sort by driver number": "Sort by driver number",
 

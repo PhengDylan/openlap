@@ -58,7 +58,10 @@ export class Options {
   fixedorder = false;
   fullscreen = false;
   language = '';
-  speech = true;
+  tts = {
+    locale: '',
+    rate: 1.0
+  }
 }
 
 export class Notification {

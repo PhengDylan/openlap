@@ -19,7 +19,7 @@
   "Settings": "Instellingen",
   "Exit": "Beeindigen",
   "Reconnect": "Opnieuw verbinden",
-  
+
   "Speed": "Snelheid",
   "Brake": "Rem",
   "Fuel": "Tank",
@@ -53,8 +53,9 @@
 
   "Language": "Taal",
   "Default": "Standard",
-  "Enable fullscreen": "Volledig scherm",
-  "Enable speech": "Spraakweergave",
+  "Speech output": "Spraakweergave",
+  "Off": "Uit",
+  "Fullscreen mode": "Volledig scherm",
   "Display current lap": "Aangeven van actuele ronde",
   "Sort by driver number": "Rijders sorteren op nummer",
 

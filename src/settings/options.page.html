@@ -18,12 +18,17 @@
       </ion-select>
     </ion-item>
     <ion-item>
-      <ion-label translate>Enable fullscreen</ion-label>
-      <ion-toggle [(ngModel)]="options.fullscreen" (ionChange)="update()"></ion-toggle>
+      <ion-label color="light" translate>Speech output</ion-label>
+      <ion-select [(ngModel)]="options.tts.locale" (ionChange)="update()" cancelText="{{'Cancel' | translate}}" okText="{{'OK' | translate}}">
+        <ion-option translate value="">Off</ion-option>
+        <ion-option value="de-de">Deutsch</ion-option>
+        <ion-option value="en-us">English</ion-option>
+        <ion-option value="nl-nl">Nederlands</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
-      <ion-label translate>Enable speech</ion-label>
-      <ion-toggle [(ngModel)]="options.speech" (ionChange)="update()"></ion-toggle>
+      <ion-label translate>Fullscreen mode</ion-label>
+      <ion-toggle [(ngModel)]="options.fullscreen" (ionChange)="update()"></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-label translate>Display current lap</ion-label>

@@ -15,7 +15,7 @@ import { RootPage } from './root.page';
 
 import { Backend } from '../backend';
 import { ControlUnit } from '../carrera';
-import { CONTROL_UNIT_SUBJECT, Settings, Toast } from '../core';
+import { CONTROL_UNIT_SUBJECT, Settings, Speech, Toast } from '../core';
 import { Logger } from '../logging';
 import { RaceControlPage } from '../rms';
 
@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
               private insomnia: Insomnia, private statusBar: StatusBar,
               private androidFullScreen: AndroidFullScreen,
               private splashScreen: SplashScreen, private toast: Toast,
+              private speech: Speech,
               private translate: TranslateService)
   {
     translate.setDefaultLang('en');

@@ -204,7 +204,7 @@ export class RaceControlPage implements OnDestroy, OnInit {
       this.settings.getNotifications()
     ).subscribe(([[event, driver], options, notifications]) => {
       this.logger.debug('New race event: ' + event, driver);
-      if (options.speech && notifications[event] && notifications[event].enabled) {
+      if (options.tts.locale && notifications[event] && notifications[event].enabled) {
         if (driver && driver.name) {
           this.speech.speak(driver.name + ': ' + notifications[event].text);
         } else {
