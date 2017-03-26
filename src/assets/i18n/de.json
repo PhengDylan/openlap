@@ -24,6 +24,8 @@
   "Brake": "Bremse",
   "Fuel": "Tank",
 
+  "Driver {{number}}": "Fahrer {{number}}",
+
   "Lap {{count}}": "Runde {{count}}",
   "Lap {{count}}/{{total}}": "Runde {{count}}/{{total}}",
 

@@ -53,6 +53,7 @@ export class AppComponent implements OnInit {
       }
       this.settings.getOptions().subscribe(options => {
         this.logger.setLevel(options.debug ? 'debug' : 'info');
+        this.speech.setLocale(options.tts.locale);
         this.translate.use(options.language || this.translate.getBrowserLang() || 'en');
         this.enableFullScreen(options.fullscreen);
       });

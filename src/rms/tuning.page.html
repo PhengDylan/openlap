@@ -30,7 +30,7 @@
         </slant>
       </ion-col>
       <ion-col center class="name" showWhen="landscape">
-        <span>{{(drivers | async)[model.id]?.name || 'Driver #' + (model.id + 1)}}</span>
+        <span>{{(drivers | async)[model.id]?.name || ('Driver {' + '{number}' + '}' | translate:{number: model.id + 1})}}</span>
       </ion-col>
       <ion-col center class="code" showWhen="portrait">
         {{(drivers | async)[model.id]?.code || '#' + (model.id + 1)}}

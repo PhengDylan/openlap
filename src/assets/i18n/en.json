@@ -24,6 +24,8 @@
   "Brake": "Brake",
   "Fuel": "Fuel",
 
+  "Driver {{number}}": "Driver {{number}}",
+
   "Lap {{count}}": "Lap {{count}}",
   "Lap {{count}}/{{total}}": "Lap {{count}}/{{total}}",
 

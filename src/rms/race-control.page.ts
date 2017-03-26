@@ -146,7 +146,7 @@ export class RaceControlPage implements OnDestroy, OnInit {
     const drivers = this.settings.getDrivers().map(drivers => {
       return drivers.map((obj, index) => {
         return {
-          name: obj.name || 'Driver #' + (index + 1),
+          name: obj.name || 'Driver ' + (index + 1),
           code: obj.code || '#' + (index + 1),
           color: obj.color
         };

@@ -24,6 +24,8 @@
   "Brake": "Rem",
   "Fuel": "Tank",
 
+  "Driver {{number}}": "Rijder {{number}}",
+
   "Lap {{count}}": "Ronde {{count}}",
   "Lap {{count}}/{{total}}": "Ronde {{count}}/{{total}}",
 
